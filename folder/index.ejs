@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code 產生器</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>QR Code 產生器</h1>
+      <form action="/generate" method="POST">
+        <input type="text" name="text" placeholder="輸入文字或網址" required />
+        <button type="submit">產生 QR Code</button>
+      </form>
+
+      <% if (qrCode) { %>
+      <h2>生成的 QR Code：</h2>
+      <img src="<%= qrCode %>" alt="QR Code" />
+      <% } %>
+    </div>
+  </body>
+</html>

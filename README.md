@@ -15,7 +15,7 @@ git clone https://github.com/tyler101362/qrcode-generator.git
 cd qrcode-generator
 ```
 
-### 2. **安裝依賴**
+### 2. **安裝**
 ```sh
 npm install
 ```
@@ -25,9 +25,9 @@ npm install
 node app.js
 ```
 
-伺服器會運行在 `http://localhost:3000`
+伺服器會運行在 `http://localhost:4000`
 
-## 🛠 技術棧
+## 🛠 技術
 - **後端**：Node.js + Express.js
 - **前端模板**：EJS
 - **QR Code 產生**：`qrcode` npm 套件
@@ -41,7 +41,7 @@ qrcode_generator/
 │── public/
 │   └── style.css      # 前端樣式
 │── app.js             # 主要的 Express 伺服器
-│── package.json       # 依賴與專案資訊
+│── package.json       # 專案資訊
 │── .gitignore         # 忽略 node_modules/
 ```
 
